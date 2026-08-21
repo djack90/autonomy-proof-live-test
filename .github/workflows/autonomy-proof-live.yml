@@ -1,0 +1,17 @@
+name: Autonomy Proof Live
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - run: echo "autonomy proof live test"
